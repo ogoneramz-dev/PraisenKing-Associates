@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PraisenKing & Associates</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="PraisenKing & Associates - Your trusted partner for innovative business solutions and growth strategies.">
+</head>
+<body>
+    <div class="main">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">PraisenKing &<br>Associates</h2>
+            </div>
+
+            <!-- Menu -->
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="design.html">DESIGN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search">
+                <input class="srch" type="search" placeholder="Type to search..." aria-label="Search field">
+                <button class="btn">Search</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Text Section -->
+            <div class="text-section">
+                <h1>Welcome to PraisenKing & Associates<br><span>Innovation & Growth</span></h1>
+                <p class="par">
+                    Your trusted partner for innovative business solutions and growth strategies.<br>
+                    We are dedicated to helping your organization achieve excellence through innovation, planning, and expertise.
+                </p>
+                <button class="cn"><a href="signup.html">JOIN US</a></button>
+            </div>
+
+            <!-- Login Form -->
+            <div class="form">
+                <h2>Login Here</h2>
+                <form action="login.html" method="post">
+                    <input type="email" name="email" placeholder="Enter Email Here" required>
+                    <input type="password" name="password" placeholder="Enter Password" required>
+                    <button class="btnn" type="submit">Login</button>
+                </form>
+
+                <p class="link">
+                    Don't have an account?<br>
+                    <a href="signup.html">Sign up here</a>
+                </p>
+
+                <p class="liw">Log in with</p>
+                <!-- social media icons here -->
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer>
+            <p style="text-align: center; color: white; padding: 15px 0;">
+                © 2025 PraisenKing & Associates. All Rights Reserved.
+            </p>
+        </footer>
+    </div>
+
+    <!-- Smooth Scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
